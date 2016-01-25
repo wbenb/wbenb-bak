@@ -1,97 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- The Data-->
+<!-- The Data-->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
-    <meta name="description" content="Ben Bretton's Personal Website - Robotics and Tech">
-    <meta name="author" content="Ben Bretton">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="keywords" content="robotics, software, hardware, frc, 2363, menchville, tech, computers, programming, electrical">
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@bigben_2000" />
-    <meta name="theme-color" content="#3c3c3c">
-    <!-- The Basics-->
-    <link rel="icon" href="/favicon.ico">
-    <title>Ben B's Website</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1 user-scalable=no" name=
+    "viewport">
+    <meta content="Ben Bretton's Personal Website - Robotics and Tech" name=
+    "description">
+    <meta content="Ben Bretton" name="author">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content=
+    "robotics, software, hardware, frc, 2363, menchville, tech, computers, programming, electrical"
+    name="keywords">
+    <meta content="summary" name="twitter:card">
+    <meta content="@bigben_2000" name="twitter:site">
+    <meta content="#3c3c3c" name="theme-color">
+<!-- The Basics-->
+    <link href="/favicon.ico" rel="icon">
+    <title>
+      Ben B's Website
+    </title>
     <link href="/css/bootstrap.css" rel="stylesheet">
-    <!-- Custom Stylesheets-->
+<!-- Custom Stylesheets-->
     <link href="/css/carousel.css" rel="stylesheet">
   </head>
-    <!-- Navigation Bar -->
+<!-- Navigation Bar -->
   <body>
     <div class="navbar-wrapper">
       <div class="container">
         <nav class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+              <button aria-controls="navbar" aria-expanded="false" class=
+              "navbar-toggle collapsed" data-target="#navbar" data-toggle=
+              "collapse" type="button"><span class="sr-only">Toggle
+              navigation</span> <span class="icon-bar"></span> <span class=
+              "icon-bar"></span> <span class="icon-bar"></span></button>
               <a class="navbar-brand" href="#">Ben Bretton</a>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse" id="navbar">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="robotics.html">Robotics</a></li>
-                <li><a href="hardware.html">Hardware</a></li>
-                <li><a href="software.html">Software</a></li>
+                <li class="active">
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a data-target="#myModal" data-toggle="modal">About</a>
+                </li>
+                <li>
+                  <a href="robotics.html">Robotics</a>
+                </li>
+                <li>
+                  <a href="hardware.html">Hardware</a>
+                </li>
+                <li>
+                  <a href="software.html">Software</a>
+                </li>
               </ul>
             </div>
           </div>
         </nav>
       </div>
     </div>
-    <!-- Carousel -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- Carousel -->
+    <div class="carousel slide" data-ride="carousel" id="myCarousel">
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="background.jpg" alt="First slide">
+          <img alt="First slide" class="first-slide" src="background.jpg">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Welcome to my website.</h1>
-              <p>My name is Ben Bretton, or on many other websites benb and bigben_2000, this website is just for me posting stuff I want to post about. Specifically Robotics, Hardware, and Software.</p>
-              <p><a class="btn btn-lg btn-primary" href="about.html" role="button">About Me</a></p>
+              <h1>
+                Welcome to my website.
+              </h1>
+              <p>
+                My name is Ben Bretton, or on many other websites benb and
+                bigben_2000, this website is just for me posting stuff I want
+                to post about. Specifically Robotics, Hardware, and Software.
+              </p>
+              <p>
+                <a class="btn btn-lg btn-primary" data-target="#myModal" data-toggle="modal">About Me</a>
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Marketing Circles-->
+<!-- Modal -->
+    <div aria-labelledby="myModalLabel" class="modal fade" id="myModal" role=
+    "dialog" tabindex="-1">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button aria-label="Close" class="close" data-dismiss="modal" type=
+            "button"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">
+              About Me
+            </h4>
+          </div>
+          <div class="modal-body"> Test </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="button" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Marketing Circles-->
     <div class="container marketing">
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="/Robotics.jpg" alt="Generic placeholder image" width="250" height="250">
-          <h2>Robotics</h2>
-          <p>Everything related to FIRST Robotics. Any Hardware or software related to Robotics will also be posted here. There will be programming, electrical, and mechanical type information here, but mostly electrical</p>
-          <p><a class="btn btn-lg btn-primary" href="robotics.html" role="button">Details</a></p>
+          <img alt="Generic placeholder image" class="img-circle" height="250"
+          src="/Robotics.jpg" width="250">
+          <h2>
+            Robotics
+          </h2>
+          <p>
+            Everything related to FIRST Robotics. Any Hardware or software
+            related to Robotics will also be posted here. There will be
+            programming, electrical, and mechanical type information here, but
+            mostly electrical
+          </p>
+          <p>
+            <a class="btn btn-lg btn-primary" href="robotics.html" role=
+            "button">Details</a>
+          </p>
         </div>
         <div class="col-lg-4">
-          <img class="img-circle" src="Hardware.jpg" alt="Generic placeholder image" width="250" height="250">
-          <h2>Hardware</h2>
-          <p>Any hardware not tied to Robotics will be here. You name it: Custom PC's, Desks, Mobile Devices, Headphones, and maybe even 3D Printers... it will be in the Hardware section. </p>
-          <p><a class="btn btn-lg btn-primary" href="hardware.html" role="button">Details</a></p>
+          <img alt="Generic placeholder image" class="img-circle" height="250"
+          src="Hardware.jpg" width="250">
+          <h2>
+            Hardware
+          </h2>
+          <p>
+            Any hardware not tied to Robotics will be here. You name it: Custom
+            PC's, Desks, Mobile Devices, Headphones, and maybe even 3D
+            Printers... it will be in the Hardware section.
+          </p>
+          <p>
+            <a class="btn btn-lg btn-primary" href="hardware.html" role=
+            "button">Details</a>
+          </p>
         </div>
         <div class="col-lg-4">
-          <img class="img-circle" src="software.jpeg" alt="Generic placeholder image" width="250" height="250">
-          <h2>Software</h2>
-          <p>Anything non-robotics, that is related to software is here. Mostly Windows and Android, but maybe Linux. This includes some programming and visual design stuff.</p>
-          <p><a class="btn btn-lg btn-primary" href="software.html" role="button">Details</a></p>
+          <img alt="Generic placeholder image" class="img-circle" height="250"
+          src="software.jpeg" width="250">
+          <h2>
+            Software
+          </h2>
+          <p>
+            Anything non-robotics, that is related to software is here. Mostly
+            Windows and Android, but maybe Linux. This includes some
+            programming and visual design stuff.
+          </p>
+          <p>
+            <a class="btn btn-lg btn-primary" href="software.html" role=
+            "button">Details</a>
+          </p>
         </div>
       </div>
-    <!-- Footer -->
+<!-- Footer -->
       <footer>
-        <p>&copy; 2017 Totally Copyrighted :)</p>
+        <p>
+          &copy; 2017 Totally Copyrighted :)
+        </p>
       </footer>
     </div>
-    <!-- Javascript-->
-    <script src="/js/jquery-1.11.3.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
-    <script src="/js/bootstrap.min.js"></script>
+<!-- Javascript-->
+    <script src="/js/jquery-1.11.3.min.js">
+    </script> 
+    <script>
+    window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')
+    </script> 
+    <script src="/js/bootstrap.min.js">
+    </script>
   </body>
 </html>
